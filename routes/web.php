@@ -8,8 +8,12 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    return Inertia::render('Dashboard/Index');
+})->name('dashboard');
+
+Route::get('/report', function () {
+    return Inertia::render('Report/Index');
+})->name('report');
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Head, Link } from '@inertiajs/vue3';
+import { Head } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import { Head, Link } from '@inertiajs/vue3';
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
     <div class="flex min-h-screen flex-col items-center bg-[#FDFDFC] p-6 text-[#1b1b18] lg:justify-center lg:p-8 dark:bg-[#0a0a0a]">
-        <header class="mb-6 w-full max-w-[335px] text-sm not-has-[nav]:hidden lg:max-w-4xl">
+        <!-- <header class="mb-6 w-full max-w-[335px] text-sm not-has-[nav]:hidden lg:max-w-4xl">
             <nav class="flex items-center justify-end gap-4">
                 <Link
                     v-if="$page.props.auth.user"
@@ -32,7 +32,7 @@ import { Head, Link } from '@inertiajs/vue3';
                     </Link>
                 </template>
             </nav>
-        </header>
+        </header> -->
         <div class="flex w-full items-center justify-center opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
             <main class="flex w-full max-w-[335px] flex-col-reverse overflow-hidden rounded-lg lg:max-w-4xl lg:flex-row">
                 <div
@@ -54,23 +54,11 @@ import { Head, Link } from '@inertiajs/vue3';
                                 </span>
                             </span>
                             <span>
-                                Read the
                                 <a
-                                    href="https://laravel.com/docs"
-                                    target="_blank"
+                                    href="/dashboard"
                                     class="ml-1 inline-flex items-center space-x-1 font-medium text-[#f53003] underline underline-offset-4 dark:text-[#FF4433]"
                                 >
-                                    <span>Documentation</span>
-                                    <svg
-                                        width="{10}"
-                                        height="{11}"
-                                        viewBox="0 0 10 11"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-2.5 w-2.5"
-                                    >
-                                        <path d="M7.70833 6.95834V2.79167H3.54167M2.5 8L7.5 3.00001" stroke="currentColor" stroke-linecap="square" />
-                                    </svg>
+                                    <span>Dashboard</span>
                                 </a>
                             </span>
                         </li>
@@ -85,23 +73,11 @@ import { Head, Link } from '@inertiajs/vue3';
                                 </span>
                             </span>
                             <span>
-                                Watch video tutorials at
                                 <a
-                                    href="https://laracasts.com"
-                                    target="_blank"
+                                    href="/report"
                                     class="ml-1 inline-flex items-center space-x-1 font-medium text-[#f53003] underline underline-offset-4 dark:text-[#FF4433]"
                                 >
-                                    <span>Laracasts</span>
-                                    <svg
-                                        width="{10}"
-                                        height="{11}"
-                                        viewBox="0 0 10 11"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-2.5 w-2.5"
-                                    >
-                                        <path d="M7.70833 6.95834V2.79167H3.54167M2.5 8L7.5 3.00001" stroke="currentColor" stroke-linecap="square" />
-                                    </svg>
+                                    <span>Report</span>
                                 </a>
                             </span>
                         </li>
